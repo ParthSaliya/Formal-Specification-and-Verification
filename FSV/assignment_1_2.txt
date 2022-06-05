@@ -1,0 +1,6 @@
+active proctype P() {
+	if
+		:: -> printf("First\n")
+		:: -> printf("Second\n")
+	fi
+}

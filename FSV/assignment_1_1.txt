@@ -1,0 +1,13 @@
+#define N 10
+active proctype P() {
+	int a[N];
+	int product = 1;
+	byte i;
+	for(i : 1 .. N){
+		select(i : 1 .. 10);
+		a[i] = i;
+	}
+	for(i in a){
+		printf("Element_%d :: %d\n", i, a[i])
+	}
+}

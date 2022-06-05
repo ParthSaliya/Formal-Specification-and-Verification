@@ -1,0 +1,13 @@
+active proctype P() {
+	int i = 1;
+	if
+		:: i < 10
+		do
+			:: i <= 10 -> i++;
+					:: printf("First\n"); i++
+					:: printf("Second\n"); i++
+				fi
+		od	
+
+	
+}
